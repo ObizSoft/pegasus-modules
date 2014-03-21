@@ -6,16 +6,17 @@
 	<!-- DataTables -->
 	<script type="text/javascript" src="static/plugins/datatables/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="static/plugins/datatables/DT_bootstrap.js"></script>
-	<script type="text/javascript" src="static/plugins/datatables/responsive/datatables.responsive.js"></script> <!-- optional -->
+	<script type="text/javascript" src="static/plugins/datatables/responsive/datatables.responsive.js"></script> 
 </wicket:head>
 
 </head>
 
 <body>
-<wicket:extend>
+
 	<div id="container">
 	
 		<div id="content">
+		<wicket:extend>
 			<div class="container">
 				<!-- Breadcrumbs line -->
 				<div class="crumbs">
@@ -45,38 +46,7 @@
 					</ul>
 				</div>
 				<!-- /Breadcrumbs line -->
-
-				<!--=== Page Header ===-->
-				<div class="page-header">
-					<div class="page-title">
-						<h3>Responsive Tables</h3>
-						<span>Good morning, John!</span>
-					</div>
-
-					<!-- Page Stats -->
-					<ul class="page-stats">
-						<li>
-							<div class="summary">
-								<span>New orders</span>
-								<h3>17,561</h3>
-							</div>
-							<div id="sparkline-bar" class="graph sparkline hidden-xs">20,15,8,50,20,40,20,30,20,15,30,20,25,20</div>
-							<!-- Use instead of sparkline e.g. this:
-							<div class="graph circular-chart" data-percent="73">73%</div>
-							-->
-						</li>
-						<li>
-							<div class="summary">
-								<span>My balance</span>
-								<h3>$21,561.21</h3>
-							</div>
-							<div id="sparkline-bar2" class="graph sparkline hidden-xs">20,15,8,50,20,40,20,30,20,15,30,20,25,20</div>
-						</li>
-					</ul>
-					<!-- /Page Stats -->
-				</div>
-				<!-- /Page Header -->
-
+				
 				<!--=== Page Content ===-->
 				<div class="row">
 					<div class="col-md-12">
@@ -194,9 +164,8 @@
 				<!-- /Page Content -->
 			</div>
 			<!-- /.container -->
-
+		</wicket:extend>
 		</div>
 	</div>
-</wicket:extend>
 </body>
 </html>
